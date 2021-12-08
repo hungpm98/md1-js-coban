@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>sukienmouse</title>
+</head>
+<body>
+<h1 id="1" onmouseover="cham()" onmouseout="kocham()">Touch here</h1>
+<script>
+  // cach 1 su kien mouseover & mouseout
+  // function cham() {
+  //   var chichuot = document.getElementById('1');
+  //   chichuot.style.color = "red";
+  // };
+  // function kocham() {
+  //   var doichuot = document.getElementById('1');
+  //   doichuot.style.color = "green";
+  //
+  // };
+  // cach 2 su kien mouseover & mouseout
+  var touch = document.getElementById('1');
+  touch.addEventListener('mouseover', chamchuot);
+  touch.addEventListener('mouseout', doichuot);
+  function chamchuot(){
+    var chamchuot = document.getElementById('1');
+    chamchuot.style.color = "red"
+  };
+  function doichuot() {
+    var doichuot = document.getElementById('1');
+    doichuot.style.color = "green"
+
+  };
+
+</script>
+</body>
+</html>
